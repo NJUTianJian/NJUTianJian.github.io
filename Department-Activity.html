@@ -478,7 +478,18 @@
     <br>
     <br>
 </section>
-
+	<!-- Valine评论功能代码 ↓ -->
+	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+	<div id="vcomments" style="background-color:#FFFFFF; padding:5%; "></div>
+	<script>
+		new Valine({
+			el: '#vcomments',
+			appId: 'y4vfsfHxHSSX2pL1E1vNkBAH-gzGzoHsz',
+			appKey: '9HAxTF8S7qYYWg3WUtE4rqCj',
+			placeholder: 'ヾﾉ≧∀≦)o 来啊，快来留下你想说的话~\n\n\n（PS：昵称、邮箱、网址可以留空哦）' // [v1.0.7 new]留言框占位提示文字
+		})
+	</script>
+	<!-- Valine评论功能代码 ↑ -->
 <section id="footer">
     <p>
         <a class="social-icon" href="https://www.zhihu.com/question/400026973" target="_blank">
