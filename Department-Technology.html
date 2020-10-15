@@ -3,10 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=0.5, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>天健社技术部</title>
     <link rel="shortcut icon" href="img/logo.ico"/>
     <link rel="bookmark" href="img/logo.ico"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/htmleaf-demo.css" rel="stylesheet" type="text/css">
+    <link href="css/overwrite.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/color.css" rel="stylesheet">
+    <link href="css/Activity.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+    <link rel="stylesheet" href="css/jquery.plusgallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+    <style type="text/css">
+		.testimonial{
+		    border-radius: 5px;
+		    padding: 40px;
+		    margin: 0 15px;
+		}
+		.testimonial .pic{
+		    width: 90px;
+		    height: 90px;
+		    margin: 0 30px 15px 0;
+		    float: left;
+		}
+		.testimonial .pic img{
+		    width: 100%;
+		    height: auto;
+		    border-radius: 50%;
+		}
+		.testimonial .testimonial-title{
+		    color: #000000;
+		    margin-top: 5px;
+		    font-weight: 800;
+		    text-transform: capitalize;
+		    text-align:center
+		}
+		.testimonial .testimonial-review li{
+		    color: #000000;
+		    font-size: 15px;
+		    font-style: italic;
+		    line-height: 19px;
+		    margin-bottom: 0;
+		    vertical-align:middle
+		}
+		.testimonial .testimonial-review p{
+		    color: #000000;
+		    font-size: 15px;
+		    font-style: italic;
+		    line-height: 19px;
+		    margin-bottom: 0;
+            text-align: center;
+		    vertical-align:middle
+		}
+		.owl-theme .owl-controls{
+		    margin-top: 20px;
+		}
+		.owl-theme .owl-controls .owl-page span{
+		    width: 10px;
+		    height: 10px;
+		    background:grey;
+		    opacity: 1;
+		}
+		.owl-theme .owl-controls .owl-page.active span,
+		.owl-theme .owl-controls.clickable .owl-page:hover span{
+		    background: grey;
+		    border: 1px solid #cdcdcd;
+		}
+		.owl-pagination{
+		    margin-top: 40px;
+		}
+		.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+		    background:black;
+		    border:3px solid grey;
+		}
+		@media screen and (max-width: 190px){
+		    .testimonial-parallax h2{
+		        margin-bottom: 40px;
+		    }
+		    .testimonial{
+		        margin: 0;
+		    }
+		}
+        .adapt-center {
+            width: 35%;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 480px){
+            .adapt-center {
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+		.mt50{padding-top: 50px;}
+	</style>
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
     	
 	<!-- 百度统计 代码 -->
 	<script>
@@ -20,21 +122,499 @@
 	</script>
 </head>
 
-<body style="margin: 0">
-    <div id="root"></div>
-    <script src="js/techdept-bundle.js"></script>
-	<!-- Valine评论功能代码 ↓ -->
-	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-	<div id="vcomments" style="background-color:#FFFFFF; padding:5%; "></div>
+<body style="width:100%">
+	<nav class="navbar navbar-default bootsnav">
+		<div class="container" style="margin: 0; width: 100%;">
+			<div class="navbar-header">
+				<button type="button" style="color:grey" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
+					<i class="fa fa-bars"></i>
+				</button>
+				<a class="navbar-brand" href="#brand">
+					<img src="img/logo.png" style="display:inline;" class="logo" alt="">
+					<span style="vertical-align:middle; font-size: 2rem; font-family: STXinwei; font-weight: 300;">天健社</span>
+				</a>
+			</div>
+			<!-- End Header Navigation -->
+	
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="computer-right">
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav navbar-left" style="font-size: 1.2rem; font-family: Microsoft YaHei" data-in="fadeInDown" data-out="fadeOutUp">
+						<li>
+							<a href="index.html">首页</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">部门</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="Department-HumanResource.html">人资部</a>
+								</li>
+								<li>
+									<a href="Department-Project.html">项目部</a>
+								</li>
+								<li>
+									<a href="Department-Activity.html">活动部</a>
+								</li>
+								<li>
+									<a href="Department-Media.html">全媒体中心</a>
+								</li>
+								<li>
+									<a href="Department-PublicRelations.html">公关部</a>
+								</li>
+								<li>
+									<a href="Department-Tang.html">唐氏之家</a>
+								</li>
+								<li>
+									<a href="Department-Technology.html">技术部</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">公益</span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="https://mp.weixin.qq.com/s/7dmnOLClNmRf9j6aA1RehQ">民艺进校园</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/N8tcIcM7MafYGJ3wp8IN3A">市博讲解员</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/2OFcHkRQOXSCw-ODTQGshg">探访老教授</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">青春伴夕阳</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/E4f-iH-2bnMBCXO2bd-ADw">食堂微公益</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="News.html">动态</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">我们</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="Us-Introduction.html">简介</a>
+								</li>
+								<li>
+									<a href="Us-History.html">历史</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+		</div>
+		<!-- .cd-primary-nav -->
+	</nav>
+	<!-- .cd-auto-hide-header -->
+	
+	<section id="PublicRelationsIntro" class="parallax first-widget">
+		<div class="parallax-overlay">
+			<div class="container home-intro-content">
+				<div class="row">
+					<div class="col-md-12">
+						<p></p>
+						<h2>“技”大成者技术部</h2>
+						<br>
+						<small>服务社会，奉献爱心，推己及人，薪火相传</small>
+						<p></p>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.parallax-overlay -->
+	</section> <!-- /#homeIntro -->
+	<!-- .cd-hero -->
+	<!--
+	<nav class="navbar navbar-default bootsnav">
+		<div class="" style="margin: 0; width: 100%;">
+			<div class="menu">
+				<div class="collapse navbar-collapse ">
+					<ul class="nav navbar-nav" style="margin: 0; width: 100%;font-size: 1rem;">
+						<li class="menu-act1">
+							<a href="#0">
+								<img src="img/icons/部门简介.png" class="inner_circle">部门简介
+							</a>
+						</li>
+						<li class="dropdown menu-act2">
+							<a href="#long" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="img/icons/长期活动.png" class="inner_circle">长期活动</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="publicwelfare-canteen.html">食堂微公益</a>
+								</li>
+								<li>
+									<a href="publicwelfare-heyuanold.html">青春伴夕阳</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/Ylf1CtkvPYM2BpiD-WOU2Q">我和动物有个约会</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown menu-act3">
+							<a href="#short" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="img/icons/短期活动.png" class="inner_circle"><strong>短期活动</strong></span>
+							</a>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="https://mp.weixin.qq.com/s/nEWf5Yu0_oVlRq6DCDLlYw">风筝节</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/ENepysIACRuS1GsEpcbbOA">国家公祭日系列活动</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">重阳节爱老活动</a>
+								</li>
+								<li>
+									<a href="https://mp.weixin.qq.com/s/3O61Plo_Hi14NjIsNhp-xw">"玉在山而草木润"--绿植活动</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	-->
+
+	<div class="htmleaf-container"   style="background:url('img/背景1.png')">
+		<div class="demo">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<br>
+						<div id="testimonial-slider" class="owl-carousel">
+							<div class="testimonial">
+	
+								<div class="testimonial-review">
+									<h3 class="testimonial-title" style="vertical-align:middle">
+										部门简介
+									</h3>
+									<br>
+									<p class="adapt-center">
+										技术部由退休社员组成，负责为天健社建言献策，为全社提供技术支持
+									</p>
+								</div>
+							</div>
+	
+							<div class="testimonial">
+								<div class="testimonial-review">
+									<h3 class="testimonial-title" style="vertical-align:middle">
+										部门工作
+									</h3>
+									<ul class="adapt-center">
+										<li>以独特技术优势为天健社的公益事业助力</li>
+										<li>以自己社团经验为天健社的日常工作提供建议</li>
+										<li>面向全社开展技能内训</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="long" >
+		<section class="dark-content our-team" id="long">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section-header">
+							<h3 class="section-title">部门成员</h3>
+							<br>
+						</div> <!-- /.section-header -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+			<div id="graph-container" style="height: 500%; margin: auto;">
+			</div>
+		</section> <!-- /.our-team -->
+	</div>
+
+	</div>
+		<!-- Valine评论功能代码 ↓ -->
+		<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+		<div id="vcomments" style="background-color:#FFFFFF; padding:5%; "></div>
+		<script>
+			new Valine({
+				el: '#vcomments',
+				appId: 'y4vfsfHxHSSX2pL1E1vNkBAH-gzGzoHsz',
+				appKey: '9HAxTF8S7qYYWg3WUtE4rqCj',
+				placeholder: 'ヾﾉ≧∀≦)o 来啊，快来留下你想说的话~\n\n\n（PS：昵称、邮箱、网址可以留空哦）' // [v1.0.7 new]留言框占位提示文字
+			})
+		</script>
+		<!-- Valine评论功能代码 ↑ -->
+	<section id="footer">
+		<p>
+			<a class="social-icon" href="https://www.zhihu.com/question/400026973" target="_blank">
+				<svg t="1602410688258" class="icon" viewBox="0 0 1024 1024" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" p-id="7363" width="200" height="200">
+					<path
+						d="M512 1024C229.236364 1024 0 794.763636 0 512S229.236364 0 512 0s512 229.236364 512 512-229.236364 512-512 512z m-129.861818-756.48s-36.212364 2.094545-48.989091 24.482909c-12.8 22.365091-54.318545 137.378909-54.318546 137.378909s13.847273 6.376727 37.28291-10.658909c23.435636-17.035636 30.882909-46.848 30.882909-46.848l42.589091-2.117818 1.070545 121.390545s-73.495273-1.070545-88.413091 0c-14.894545 1.047273-23.412364 40.448-23.412364 40.448h111.825455s-9.588364 67.095273-38.353455 116.084364c-28.741818 48.989091-83.060364 87.319273-83.060363 87.319273s39.424 15.965091 77.730909-6.4c38.353455-22.341818 66.629818-120.692364 66.629818-120.692364l89.925818 110.056727s8.192-52.386909-1.466182-67.188363c-9.658182-14.778182-62.208-74.286545-62.208-74.286546l-22.946909 20.247273 16.337455-65.117091h97.954909s0-38.353455-19.153455-40.494545c-19.176727-2.094545-78.801455 0-78.801454 0V371.898182h88.389818s-1.070545-39.400727-18.106182-39.400727h-143.755636l22.341818-64.954182z m169.984 61.184v358.562909h36.002909l13.102545 45.009455 63.348364-45.009455h89.064727V328.704h-201.518545z"
+						fill="#ffffff" p-id="7364"></path>
+					<path
+						d="M594.781091 368.64h117.899636v277.876364h-41.890909l-53.364363 40.261818-11.636364-40.261818h-11.008V368.64z"
+						fill="#ffffff" p-id="7365"></path>
+				</svg>
+			</a>
+			<a class="social-icon" href="https://space.bilibili.com/426406230" target="_blank">
+				<svg t="1602410645541" class="icon" viewBox="0 0 1129 1024" version="1.1"
+					xmlns="http://www.w3.org/2000/svg" p-id="6740" width="200" height="200">
+					<path
+						d="M 234.909 9.65619 a 80.4683 80.4683 0 0 1 68.398 0 a 167.374 167.374 0 0 1 41.8435 30.5779 l 160.937 140.82 H 621.156 L 782.093 40.2341 a 168.983 168.983 0 0 1 41.8435 -30.5779 a 80.4683 80.4683 0 0 1 107.023 66.7887 a 80.4683 80.4683 0 0 1 -17.703 53.9138 a 449.818 449.818 0 0 1 -35.406 32.1873 a 232.553 232.553 0 0 1 -22.5311 18.5077 h 100.585 a 170.593 170.593 0 0 1 118.288 53.1091 A 171.397 171.397 0 0 1 1128.11 352.451 v 462.693 a 325.897 325.897 0 0 1 -4.02342 70.0074 a 178.64 178.64 0 0 1 -80.4683 112.656 a 173.007 173.007 0 0 1 -92.5385 25.7499 H 212.377 a 341.186 341.186 0 0 1 -72.4215 -4.02342 a 177.835 177.835 0 0 1 -111.046 -80.4683 A 172.202 172.202 0 0 1 1.55049 846.526 V 388.662 A 360.498 360.498 0 0 1 1.55049 321.873 a 177.03 177.03 0 0 1 160.937 -143.234 h 105.413 c -16.8983 -12.0702 -31.3826 -26.5545 -46.6716 -39.4295 a 80.4683 80.4683 0 0 1 -25.7499 -65.984 A 80.4683 80.4683 0 0 1 234.909 9.65619 M 216.401 321.873 a 80.4683 80.4683 0 0 0 -63.5699 57.9372 a 108.632 108.632 0 0 0 0 30.5779 v 380.615 a 80.4683 80.4683 0 0 0 55.5231 80.4683 a 106.218 106.218 0 0 0 34.6014 5.63278 h 654.207 a 80.4683 80.4683 0 0 0 76.4449 -47.4763 a 112.656 112.656 0 0 0 8.04683 -53.1091 v -354.06 a 135.187 135.187 0 0 0 0 -38.6248 a 80.4683 80.4683 0 0 0 -52.3044 -54.7184 a 129.554 129.554 0 0 0 -49.8903 -7.24215 H 254.221 a 268.764 268.764 0 0 0 -37.8201 0 Z m 0 0"
+						fill="#ffffff" p-id="6741"></path>
+					<path
+						d="M 348.369 447.404 a 80.4683 80.4683 0 0 1 55.5231 18.5077 a 80.4683 80.4683 0 0 1 28.1639 59.5465 v 80.4683 a 80.4683 80.4683 0 0 1 -16.0937 51.4997 a 80.4683 80.4683 0 0 1 -131.968 -9.65619 a 104.609 104.609 0 0 1 -10.4609 -54.7184 v -80.4683 a 80.4683 80.4683 0 0 1 70.0074 -67.5934 Z m 416.021 0 a 80.4683 80.4683 0 0 1 86.1011 75.6402 v 80.4683 a 94.1479 94.1479 0 0 1 -12.0702 53.1091 a 80.4683 80.4683 0 0 1 -132.773 0 a 95.7573 95.7573 0 0 1 -12.8749 -57.1325 v -80.4683 a 80.4683 80.4683 0 0 1 70.0074 -70.8121 Z m 0 0"
+						fill="#ffffff" p-id="6742"></path>
+				</svg>
+	
+			</a>
+			<a class="social-icon" href="https://github.com/NJUTianJian/NJUTianJian.github.io" target="_blank">
+				<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+					<title id="simpleicons-github-icon" lang="en">GitHub icon</title>
+					<path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
+				</svg>
+	
+			</a>
+			<a class="social-icon" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzAxNjE1OTgwMQ==&hid=5&sn=bb1fa9acc517d8904d9d5a914d19ab4e&scene=18#wechat_redirect"
+			   target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
+					<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+					   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+					   style="mix-blend-mode: normal">
+						<path d="M0,252v-252h252v252z" fill="#494a5f"></path>
+						<g>
+							<g id="surface1">
+								<path d="M94.5,31.5c-46.2041,0 -84,31.5 -84,70.875c0,22.5791 12.0791,42 31.5,55.125l-10.5,31.5l33.0791,-20.46679c8.9209,3.13769 19.4209,4.71679 29.9209,4.71679c46.2041,0 84,-31.5 84,-70.875c0,-39.375 -37.7959,-70.875 -84,-70.875z"
+									  fill="#ffffff"></path>
+								<path d="M105,152.25c0,-32.0332 30.4541,-57.75 68.25,-57.75c1.5791,0 3.15821,0 4.7168,0c-0.5127,-3.6709 -1.55859,-7.34179 -2.625,-10.5c-0.5127,0 -1.55859,0 -2.0918,0c-43.5791,0 -78.75,30.4541 -78.75,68.25c0,7.3418 1.5791,14.1709 3.6709,21c3.6709,0 7.36231,-0.5332 11.0332,-1.0459c-2.625,-6.29589 -4.2041,-13.125 -4.2041,-19.9541z"
+									  fill="#494a5f"></path>
+								<path d="M241.5,152.25c0,-32.0332 -30.4541,-57.75 -68.25,-57.75c-37.7959,0 -68.25,25.7168 -68.25,57.75c0,32.03321 30.4541,57.75 68.25,57.75c9.4541,0 18.375,-1.5791 26.25,-4.2041l26.25,14.7041l-7.34179,-25.2041c14.17089,-10.5 23.09179,-25.7168 23.09179,-43.0459z"
+									  fill="#ffffff"></path>
+								<path d="M73.5,78.75c0,5.78321 -4.71679,10.5 -10.5,10.5c-5.7832,0 -10.5,-4.71679 -10.5,-10.5c0,-5.7832 4.7168,-10.5 10.5,-10.5c5.78321,0 10.5,4.7168 10.5,10.5zM126,68.25c-5.7832,0 -10.5,4.7168 -10.5,10.5c0,5.78321 4.7168,10.5 10.5,10.5c5.78321,0 10.5,-4.71679 10.5,-10.5c0,-5.7832 -4.71679,-10.5 -10.5,-10.5z"
+									  fill="#000000"></path>
+								<path d="M157.5,139.125c0,4.2041 -3.6709,7.875 -7.875,7.875c-4.2041,0 -7.875,-3.6709 -7.875,-7.875c0,-4.2041 3.6709,-7.875 7.875,-7.875c4.2041,0 7.875,3.6709 7.875,7.875zM196.875,131.25c-4.2041,0 -7.875,3.6709 -7.875,7.875c0,4.2041 3.6709,7.875 7.875,7.875c4.2041,0 7.875,-3.6709 7.875,-7.875c0,-4.2041 -3.6709,-7.875 -7.875,-7.875z"
+									  fill="#000000"></path>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</a>
+			<a class="social-icon" href="https://baike.baidu.com/item/南京大学天健社" target="_blank">
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
+					<g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+					   stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
+					   style="mix-blend-mode: normal">
+						<path d="M0,252v-252h252v252z" fill="none"></path>
+						<g id="Layer_1">
+							<path d="M189.4935,164.5875c-8.89875,-7.875 -19.7085,-16.93125 -34.965,-38.5875c-9.79125,-13.89675 -18.438,-21 -31.1535,-21c-13.986,0 -21.61425,6.5625 -29.148,17.21475c-11.025,15.59775 -15.35625,20.84775 -26.712,29.79375c-4.1265,3.24975 -25.52025,16.653 -25.515,40.27275c0.00525,27.5625 19.70325,38.71875 37.56375,38.71875c23.46225,0 28.55475,-5.25 43.81125,-5.25c19.07325,0 29.2425,5.25 44.499,5.25c30.51825,0 36.876,-22.96875 36.876,-37.422c0,-13.7655 -6.35775,-21.1155 -15.2565,-28.9905z"
+								  fill="#ffffff"></path>
+							<path d="M59.79225,130.64625c16.401,-3.6435 18.984,-19.62975 18.95775,-30.093c-0.0105,-3.654 -0.336,-6.63075 -0.504,-8.1795c-1.0395,-8.8095 -10.64175,-23.8875 -23.89275,-24.1185c-0.63,-0.0105 -1.2705,0.0105 -1.91625,0.06825c-17.913,1.6485 -20.53275,28.413 -20.53275,28.413c-0.294,1.50675 -0.4305,3.21825 -0.4095,5.05575c0.16275,11.88075 7.119,29.01675 22.4385,29.4525c1.8375,0.04725 3.78525,-0.1365 5.859,-0.5985"
+								  fill="#ffffff"></path>
+							<path d="M102.39075,84c13.05675,0 23.60925,-14.09625 23.60925,-31.5105c0,-17.41425 -10.5525,-31.4895 -23.60925,-31.4895c-13.062,0 -23.64075,14.07525 -23.64075,31.4895c0,17.41425 10.57875,31.5105 23.64075,31.5105"
+								  fill="#ffffff"></path>
+							<path d="M154.9905,89.061c1.16025,0.16275 2.289,0.21525 3.38625,0.17325c14.154,-0.54075 23.184,-17.199 25.10025,-30.04575c0.19425,-1.26525 0.2835,-2.5515 0.273,-3.84825c-0.07875,-12.81525 -9.61275,-26.313 -19.94475,-28.8225c-11.42925,-2.793 -25.68825,16.65825 -26.9745,29.3475c-0.19425,1.9425 -0.30975,3.87975 -0.33075,5.79075c-0.13125,13.398 4.41525,25.48875 18.4905,27.405"
+								  fill="#ffffff"></path>
+							<path d="M220.416,110.9955c0,-6.72525 -5.271,-26.9955 -24.8955,-26.9955c-19.6665,0 -22.2705,19.131 -22.2705,32.64975c0,12.6525 0.98175,30.198 24.0345,30.35025c0.45675,0.00525 0.924,0 1.40175,-0.0105c21.14175,-0.4935 21.96075,-22.06575 21.798,-32.2245c-0.021,-1.56975 -0.06825,-2.86125 -0.06825,-3.7695"
+								  fill="#ffffff"></path>
+							<path d="M126,162.75v39.375c0,0 0,9.84375 13.78125,13.125h33.46875v-52.5h-13.78125v39.375h-14.4375c0,0 -4.59375,-0.65625 -5.25,-3.9375v-35.4375z"
+								  fill="#000000"></path>
+							<path d="M105,141.75v21h-15.75c-11.15625,1.96875 -21,11.8125 -20.99475,25.59375c0,0.2205 -0.00525,0.43575 -0.00525,0.65625c0,14.4375 9.84375,24.28125 21,26.25h29.53125v-73.5zM105,203.4375h-12.46875c-3.9375,0 -10.5,-5.90625 -10.5,-14.4375c0,-8.53125 6.5625,-14.4375 10.5,-14.4375h12.46875z"
+								  fill="#000000"></path>
+						</g>
+					</g>
+				</svg>
+			</a>
+		</p>
+		<p style="font-size:14px">遵循
+			<a href="https://opensource.org/licenses/MIT" target="_blank">MIT 开源协议</a>
+			<br> Ⓒ 2018 南大天健社技术部 团队出品
+		</p>
+	</section>
+	
+	<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+	<script type="text/javascript" src="js/jquery.plusGallery.js"></script>
+	<script type="text/javascript">
+		$(window).on('load', function() {
+			$('.myplusgallery').plusGallery({height: '350px'});
+		});
+	  </script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootsnav.js"></script>
+	<!--
 	<script>
-		new Valine({
-			el: '#vcomments',
-			appId: 'y4vfsfHxHSSX2pL1E1vNkBAH-gzGzoHsz',
-			appKey: '9HAxTF8S7qYYWg3WUtE4rqCj',
-			placeholder: 'ヾﾉ≧∀≦)o 来啊，快来留下你想说的话~\n\n\n（PS：昵称、邮箱、网址可以留空哦）' // [v1.0.7 new]留言框占位提示文字
+		$(function(){
+			var navH=$(".menu").offset().top;
+			$(window).scroll(function(){
+			var scroH=$(this).scrollTop();
+			if(scroH>=navH){
+			$(".menu").css({"position":"fixed","top":0,"left":0,"background-color":"white","opacity":"2"})
+			}else{
+			$(".menu").css({"position":"static","background-color":"white","opacity":"1"})
+			}
+			})
 		})
 	</script>
-	<!-- Valine评论功能代码 ↑ -->
-</body>
+	-->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#testimonial-slider").owlCarousel({
+				items:1,
+				itemsDesktop:[1000,1],
+				itemsDesktopSmall:[979,1],
+				itemsTablet:[768,1],
+				pagination: true,
+				autoPlay:true
+			});
+		});
+	</script>
+
+	<script src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+	<script type="text/javascript">
+		/* 这里用于绘制部员成员的echarts图 */
+		// 基于准备好的dom，初始化echarts实例
+		var myChart = echarts.init(document.getElementById('graph-container'));
+		myChart.showLoading();
+
+		// 根据persons.csv, departments.csv和relations.csv生成图表。
+		// 未来如果浏览器缓存未更新的csv导致内容无法更新，可以在get的文件后添加随机数作为参数，如'assets/persons.csv?rdm='+Math.random()
+		// csv分隔符为#$
+		$.get('assets/persons.csv', function(psnString, status){
+			var persons = psnString.split('\n');
+			for(var i=0; i<persons.length; i++){
+				persons[i] = persons[i].split('#$');
+				// 去掉两边多余的空格
+				for(var j=0;j<persons[i].length; j++){
+					persons[i][j] = persons[i][j].trim();
+				}
+			}
+			// console.log(persons);
+			$.get('assets/departments.csv', function(dptString, status){
+				var depts = dptString.split('\n');
+				for(var i=0; i<depts.length; i++){
+					depts[i] = depts[i].split('#$');
+					// 去掉两边多余的空格
+					for(var j=0;j<depts[i].length; j++){
+						depts[i][j] = depts[i][j].trim();
+					}
+				}
+				// console.log(depts);
+				$.get('assets/relations.csv', function(rlnString, status){
+					// ps_depts = {张帅: [{部门:人资部, 职务: 部长, 学年: 2019-2020}]}
+					var ps_depts = {};
+					var rlns = rlnString.split('\n');
+					for(var i=0; i<rlns.length; i++){
+						rln = rlns[i].split('#$');
+						// 去掉两边多余的空格，分别得到姓名、部门、职务、学年
+						var name = rln[0].trim(), dept = rln[1].trim(), post = rln[2].trim(), year = rln[3].trim();
+						if(! (name in ps_depts)){ // 姓名
+							ps_depts[name] = [];
+						}
+						ps_depts[name].push({'部门': dept, '职务': post, '学年': year});
+					}
+					// console.log(ps_depts);
+					showGraph(persons, depts, ps_depts);
+				});
+			});
+		});
+
+		function showGraph(persons, depts, ps_depts){
+			var categories = ['姓名', '部门'];
+			var nodes = [];
+			// 添加姓名节点
+			for(var i=1; i<persons.length; i++){ // 第一行为header
+				nodes.push({
+					'name': persons[i][0], // 姓名
+					'tooltip': {
+						'formatter': persons[i][1] // 简介
+					},
+					'category': 0,
+					'symbolSize': 15,
+					'label': {
+						'show': true, 
+						'position': 'inside'
+					}
+				})
+			}
+			// 添加部门节点
+			for(var i=1; i<depts.length; i++){ // 第一行为header
+				nodes.push({
+					'name': depts[i][0], // 部门名
+					'tooltip': {
+						'formatter': depts[i][1] // 简介
+					},
+					'category': 1, // 部门
+					'symbolSize': 30,
+					'label': {
+						'show': true, 
+						'position': 'inside'
+					}
+				})
+			}
+			// 将所有节点设置为可拖拽
+			for(var i=0; i<nodes.length; i++){
+				nodes[i].draggable = true;
+			}
+			// 添加边
+			// ps_depts = {张帅: [{部门:人资部, 职务: 部长, 学年: 2019-2020}]}
+			var links = [];
+			for(var ps in ps_depts){
+				var depts = ps_depts[ps];
+				for(var i=0; i<depts.length; i++){
+					var relation = depts[i];
+					links.push({
+						source: ps,
+						target: relation['部门'],
+						'detail': relation['职务']+'('+relation['学年']+')'
+					});
+				}
+			}
+			// 使用刚指定的配置项和数据显示图表。
+			myChart.hideLoading();
+			myChart.setOption({
+				// title: {
+				//     text: '天健社技术部'
+				// },
+				tooltip: {
+					trigger: 'item',
+					confine: true,  // 避免tooltip框超出显示范围
+					formatter: function(params){
+						if(params.data.detail){
+							// 这里的data是单个数据项，有detail属性则说明这是边
+							return params.data.detail
+						}
+					}
+				},
+				// legend: {
+				//     data: categories.map(function (a) {
+				//         return a.name;
+				//     })
+				// },
+				animation: false,
+				series: [{
+					name: '天健社技术部',
+					type: 'graph',
+					layout: 'force',
+					data: nodes,
+					links: links,
+					categories: categories,
+					roam: true,
+					force: {
+						repulsion: 100
+					}
+				}]
+			});
+		}
+	</script>
+	
+	</body>
 
 </html>
