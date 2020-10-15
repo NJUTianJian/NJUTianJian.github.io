@@ -4,7 +4,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+		function bodyScale() {
+			var devicewidth = document.documentElement.clientWidth;
+			var scale = devicewidth / 1440;  // 分母——设计稿的尺寸
+			document.body.style.zoom = scale;
+		}
+		window.onresize = function () {
+			bodyScale();
+		};
+	</script>
+
 	<title>南京大学天健社</title>
 	<link rel="shortcut icon" href="img/logo.ico" />
 	<link rel="bookmark" href="img/logo.ico" />
@@ -25,20 +35,21 @@
 				maxParticles: 300,
 				color: ['#DA0463', '#404B69', '#DBEDF3']
 			});
+			bodyScale();
 		}
 	</script>
 	<!--[if IE]>
 		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
 	<![endif]-->
-	
+
 	<!-- 百度统计 代码 -->
 	<script>
 		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?b70b03e21e610cc5f002c2059603e64e";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?b70b03e21e610cc5f002c2059603e64e";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
 		})();
 	</script>
 </head>

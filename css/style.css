@@ -254,6 +254,13 @@ footer .container{
     padding: 25px 15px;
 }
 
+.container {
+    width: 1170px;
+    max-width: none !important;
+}
+
+body{min-width:1400px};
+
 /*
 Clear spacer
 =========================== */
