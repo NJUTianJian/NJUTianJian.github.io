@@ -593,7 +593,7 @@ pre span{
     height: 400px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 0px) {
   .cd-hero {
     height: 650px;
   }
@@ -622,7 +622,6 @@ pre span{
 
 .join-bt a{
   display: block;
-  width: 100px;
   height: 30px;
   font-size: 20px;
   margin: 10px auto;
