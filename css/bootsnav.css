@@ -67,10 +67,8 @@ nav.navbar.bootsnav ul.nav li.active > a{
 
 nav.navbar.bootsnav .navbar-toggle{
     border: none;
-    padding: 0;
-    font-size: 18px;
+    font-size: 40px;
     position: relative;
-    top: 5px;
 }
 
 nav.navbar.bootsnav ul.nav .dropdown-menu .dropdown-menu{
@@ -501,7 +499,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 /* Navbar Responsive
 =================================*/
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
     /* General Navbar
     =================================*/
     nav.navbar.bootsnav ul.nav .dropdown-menu .dropdown-menu{
@@ -1364,12 +1362,3 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
 }
 
-
-/*
-@media (min-width: 480px) and (max-width: 900px) {
-    nav.bootsnav.navbar-full ul.nav{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-}
-*/
