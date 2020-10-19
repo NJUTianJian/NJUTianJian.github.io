@@ -702,3 +702,19 @@ pre span{
     outline: none;
 }
 
+.introduction {
+    text-align: left;
+    color: black;
+    width: max-content;
+    margin: 0 auto;
+    /* padding: 3em; */
+}
+.introduction dt{
+    font-weight: bold;
+    font-size: 1.2em;
+    /* margin-top: 1em; */
+    /* margin-bottom: 0.5em; */
+}
+.introduction h4{
+    text-align: center;
+}
