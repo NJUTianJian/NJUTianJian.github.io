@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>天健社活动部</title>
-    <link rel="shortcut icon" href="img/logo.ico"/>
-    <link rel="bookmark" href="img/logo.ico"/>
+    <link rel="shortcut icon" href="img/logo.ico" />
+    <link rel="bookmark" href="img/logo.ico" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="fonts/FontAwesome/font-awesome.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -18,218 +18,241 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color.css" rel="stylesheet">
     <link href="css/Activity.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css"><!--演示页面样式，使用时可以不引用-->
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <!--演示页面样式，使用时可以不引用-->
     <link rel="stylesheet" href="css/jquery.plusgallery.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
     <style type="text/css">
-		.testimonial{
-		    border-radius: 5px;
-		    padding: 40px;
-		    margin: 0 15px;
-		}
-		.testimonial .pic{
-		    width: 90px;
-		    height: 90px;
-		    margin: 0 30px 15px 0;
-		    float: left;
-		}
-		.testimonial .pic img{
-		    width: 100%;
-		    height: auto;
-		    border-radius: 50%;
-		}
-		.testimonial .testimonial-title{
-		    color: #000000;
-		    margin-top: 5px;
-		    font-weight: 800;
-		    text-transform: capitalize;
-		    text-align:center
-		}
-		.testimonial .testimonial-review li{
-		    color: #000000;
-		    font-size: 15px;
-		    font-style: italic;
-		    line-height: 19px;
-		    margin-bottom: 0;
-		    vertical-align:middle
-		}
-		.testimonial .testimonial-review p{
-		    color: #000000;
-		    font-size: 15px;
-		    font-style: italic;
-		    line-height: 19px;
-		    margin-bottom: 0;
+        .testimonial {
+            border-radius: 5px;
+            padding: 40px;
+            margin: 0 15px;
+        }
+        
+        .testimonial .pic {
+            width: 90px;
+            height: 90px;
+            margin: 0 30px 15px 0;
+            float: left;
+        }
+        
+        .testimonial .pic img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        
+        .testimonial .testimonial-title {
+            color: #000000;
+            margin-top: 5px;
+            font-weight: 800;
+            text-transform: capitalize;
+            text-align: center
+        }
+        
+        .testimonial .testimonial-review li {
+            color: #000000;
+            font-size: 15px;
+            font-style: italic;
+            line-height: 19px;
+            margin-bottom: 0;
+            vertical-align: middle
+        }
+        
+        .testimonial .testimonial-review p {
+            color: #000000;
+            font-size: 15px;
+            font-style: italic;
+            line-height: 19px;
+            margin-bottom: 0;
             text-align: center;
-		    vertical-align:middle
-		}
-		.owl-theme .owl-controls{
-		    margin-top: 20px;
-		}
-		.owl-theme .owl-controls .owl-page span{
-		    width: 10px;
-		    height: 10px;
-		    background:grey;
-		    opacity: 1;
-		}
-		.owl-theme .owl-controls .owl-page.active span,
-		.owl-theme .owl-controls.clickable .owl-page:hover span{
-		    background: grey;
-		    border: 1px solid #cdcdcd;
-		}
-		.owl-pagination{
-		    margin-top: 40px;
-		}
-		.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
-		    background:black;
-		    border:3px solid grey;
-		}
-		@media screen and (max-width: 190px){
-		    .testimonial-parallax h2{
-		        margin-bottom: 40px;
-		    }
-		    .testimonial{
-		        margin: 0;
-		    }
-		}
+            vertical-align: middle
+        }
+        
+        .owl-theme .owl-controls {
+            margin-top: 20px;
+        }
+        
+        .owl-theme .owl-controls .owl-page span {
+            width: 10px;
+            height: 10px;
+            background: grey;
+            opacity: 1;
+        }
+        
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span {
+            background: grey;
+            border: 1px solid #cdcdcd;
+        }
+        
+        .owl-pagination {
+            margin-top: 40px;
+        }
+        
+        .owl-theme .owl-controls .owl-page.active span,
+        .owl-theme .owl-controls.clickable .owl-page:hover span {
+            background: black;
+            border: 3px solid grey;
+        }
+        
+        @media screen and (max-width: 190px) {
+            .testimonial-parallax h2 {
+                margin-bottom: 40px;
+            }
+            .testimonial {
+                margin: 0;
+            }
+        }
+        
         .adapt-center {
             width: 35%;
             margin: 0 auto;
         }
-        @media screen and (max-width: 480px){
+        
+        @media screen and (max-width: 480px) {
             .adapt-center {
                 width: 100%;
                 margin: 0 auto;
             }
         }
-		.mt50{padding-top: 50px;}
-	</style>
+        
+        .mt50 {
+            padding-top: 50px;
+        }
+    </style>
     <!--[if IE]>
     <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
     <![endif]-->
-	
-	<!-- 百度统计 代码 -->
-	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "https://hm.baidu.com/hm.js?b70b03e21e610cc5f002c2059603e64e";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
+
+    <!-- 百度统计 代码 -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b70b03e21e610cc5f002c2059603e64e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 
 <body style="width:100%">
-<nav class="navbar navbar-default bootsnav">
-    <div class="container" style="margin: 0; width: 100%;">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" style="color:grey">
+    <nav class="navbar navbar-default bootsnav">
+        <div class="container" style="margin: 0; width: 100%;">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false" style="color:grey">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="#brand">
-                <img src="img/logo.png" style="display:inline;" class="logo" alt="">
-                <span style="vertical-align:middle; font-size: 2rem; font-family: STXinwei; font-weight: 300;">天健社</span>
-            </a>
-        </div>
-        <!-- End Header Navigation -->
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="computer-right">
-            <div class="collapse navbar-collapse" id="navbar-menu">
-                <ul class="nav navbar-nav navbar-left" style="font-size: 1.2rem; font-family: Microsoft YaHei" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li>
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">部门</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="Department-HumanResource.html">人资部</a>
-                            </li>
-                            <li>
-                                <a href="Department-Project.html">项目部</a>
-                            </li>
-                            <li>
-                                <a href="Department-Activity.html">活动部</a>
-                            </li>
-                            <li>
-                                <a href="Department-Media.html">全媒体中心</a>
-                            </li>
-                            <li>
-                                <a href="Department-PublicRelations.html">公关部</a>
-                            </li>
-                            <li>
-                                <a href="Department-Tang.html">唐氏之家</a>
-                            </li>
-                            <li>
-                                <a href="Department-Technology.html">技术部</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">公益</span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="https://mp.weixin.qq.com/s/7dmnOLClNmRf9j6aA1RehQ">民艺进校园</a>
-                            </li>
-                            <li>
-                                <a href="https://mp.weixin.qq.com/s/N8tcIcM7MafYGJ3wp8IN3A">市博讲解员</a>
-                            </li>
-                            <li>
-                                <a href="https://mp.weixin.qq.com/s/2OFcHkRQOXSCw-ODTQGshg">探访老教授</a>
-                            </li>
-                            <li>
-                                <a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">青春伴夕阳</a>
-                            </li>
-                            <li>
-                                <a href="https://mp.weixin.qq.com/s/E4f-iH-2bnMBCXO2bd-ADw">食堂微公益</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="News.html">动态</a>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">我们</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li>
-                                <a href="Us-Introduction.html">简介</a>
-                            </li>
-                            <li>
-                                <a href="Us-History.html">历史</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <a class="navbar-brand" href="#brand">
+                    <img src="img/logo.png" style="display:inline;" class="logo" alt="">
+                    <span style="vertical-align:middle; font-size: 2rem; font-family: STXinwei; font-weight: 300;">天健社</span>
+                </a>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-    </div>
-    <!-- .cd-primary-nav -->
-</nav>
-<!-- .cd-auto-hide-header -->
+            <!-- End Header Navigation -->
 
-<section id="homeIntro" class="parallax first-widget">
-    <div class="parallax-overlay">
-        <div class="container home-intro-content">
-            <div class="row">
-                <div class="col-md-12">
-                    <p></p>
-                    <h2>活力满满活动部</h2>
-                    <br>
-                    <small>服务社会，奉献爱心，推己及人，薪火相传</small>
-                    <p></p>
-                    </div> <!-- /.col-md-12 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /.parallax-overlay -->
-</section> <!-- /#homeIntro -->
-<!-- .cd-hero -->
-<!--
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="computer-right">
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-left" style="font-size: 1.2rem; font-family: Microsoft YaHei" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">部门</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="Department-HumanResource.html">人资部</a>
+                                </li>
+                                <li>
+                                    <a href="Department-Project.html">项目部</a>
+                                </li>
+                                <li>
+                                    <a href="Department-Activity.html">活动部</a>
+                                </li>
+                                <li>
+                                    <a href="Department-Media.html">全媒体中心</a>
+                                </li>
+                                <li>
+                                    <a href="Department-PublicRelations.html">公关部</a>
+                                </li>
+                                <li>
+                                    <a href="Department-Tang.html">唐氏之家</a>
+                                </li>
+                                <li>
+                                    <a href="Department-Technology.html">技术部</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">公益</span>
+                        </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="https://mp.weixin.qq.com/s/7dmnOLClNmRf9j6aA1RehQ">民艺进校园</a>
+                                </li>
+                                <li>
+                                    <a href="https://mp.weixin.qq.com/s/N8tcIcM7MafYGJ3wp8IN3A">市博讲解员</a>
+                                </li>
+                                <li>
+                                    <a href="https://mp.weixin.qq.com/s/2OFcHkRQOXSCw-ODTQGshg">探访老教授</a>
+                                </li>
+                                <li>
+                                    <a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">青春伴夕阳</a>
+                                </li>
+                                <li>
+                                    <a href="https://mp.weixin.qq.com/s/E4f-iH-2bnMBCXO2bd-ADw">食堂微公益</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="News.html">动态</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">我们</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="Us-Introduction.html">简介</a>
+                                </li>
+                                <li>
+                                    <a href="Us-History.html">历史</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+        </div>
+        <!-- .cd-primary-nav -->
+    </nav>
+    <!-- .cd-auto-hide-header -->
+
+    <section id="homeIntro" class="parallax first-widget">
+        <div class="parallax-overlay">
+            <div class="container home-intro-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p></p>
+                        <h2>活力满满活动部</h2>
+                        <br>
+                        <small>服务社会，奉献爱心，推己及人，薪火相传</small>
+                        <p></p>
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.parallax-overlay -->
+    </section>
+    <!-- /#homeIntro -->
+    <!-- .cd-hero -->
+    <!--
 <nav class="navbar navbar-default bootsnav">
     <div class="" style="margin: 0; width: 100%;">
         <div class="menu">
@@ -281,61 +304,61 @@
 </nav>
 -->
 
-<div class="htmleaf-container"  style="background:url('img/背景1.png')">
-    <div class="demo">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <br>
-                    <div id="testimonial-slider" class="owl-carousel">
-                        <div class="testimonial">
-                            <div class="testimonial-review">
-                                <br>
-                                <h3 class="testimonial-title" style="vertical-align:middle;">
-                                    部门简介
-                                </h3>
-                                <p class="adapt-center">
-                                    活动部主要负责活动策划和实施的部门，重点是短期的创新型活动。
-                                    其实，就是和一群热爱公益的小伙伴们一起组织公益活动
-                                </p>
+    <div class="htmleaf-container" style="background:url('img/背景1.png')">
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="testimonial-review">
+                                    <br>
+                                    <h3 class="testimonial-title" style="vertical-align:middle;">
+                                        部门简介
+                                    </h3>
+                                    <p class="adapt-center">
+                                        活动部是天健社内部主要负责活动策划和实施的部门。在运行三个长期活动的同时，其重点是短期活动的创新。简单来说，就是一群热爱公益的小伙伴们聚在一起，把公益想法转变为现实的神奇部门~
+                                    </p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="testimonial">
-                            <div class="testimonial-review">
-                                <h3 class="testimonial-title">
-                                    主要工作
-                                </h3>
-                                <ol class="adapt-center">
-                                <li>运行三项长期活动</li>
-                                <li>定期举办短期活动：</li>
-                                    <ul>
-                                        <li>提出活动构想，设计新的活动;</li>
-                                        <li>提交详细的活动策划,进行活动的前期准备;</li>
-                                        <li>执行活动，活动结束后对活动整体进行总结</li>
+                            <div class="testimonial">
+                                <div class="testimonial-review">
+                                    <h3 class="testimonial-title">
+                                        主要工作
+                                    </h3>
+                                    <ol class="adapt-center">
+                                        <li>运行三项长期活动</li>
+                                        <li>定期举办短期活动：</li>
+                                        <ul>
+                                            <li>提出活动构想，设计新的活动;</li>
+                                            <li>提交详细的活动策划,进行活动的前期准备;</li>
+                                            <li>执行活动，活动结束后对活动整体进行总结</li>
+                                        </ul>
+                                    </ol>
+                                </div>
+                            </div>
+
+                            <div class="testimonial">
+
+                                <div class="testimonial-review">
+                                    <h3 class="testimonial-title">
+                                        能力锻炼
+                                    </h3>
+                                    <br>
+                                    <ul class="adapt-center">
+                                        <li>
+                                            来活动部一起策划活动，交往、策划、合作等能力都会大大提高，思维方式等方面也会有意想不到的进步~
+                                        </li>
+                                        <li>
+                                            来活动部，我们一起玩耍！秋游、轰趴、k歌，桌游，你想要的我们都有！大家也会一起嘻嘻哦~
+                                        </li>
+                                        <li>
+                                            在活动部，你的每一个想法都会不止于想法。这里有将想法变为现实的神奇魔法！
+                                        </li>
                                     </ul>
-                                </ol>
-                            </div>
-                        </div>
-
-                        <div class="testimonial">
-
-                            <div class="testimonial-review">
-                                <h3 class="testimonial-title">
-                                    能力锻炼
-                                </h3>
-                                <br>
-                                <ul class="adapt-center">
-                                    <li>
-                                        来活动部一起策划活动，策划能力大大提高哦~
-                                    </li>
-                                    <li>
-                                        来活动部愉快地破冰、春游、日常聚餐
-                                    </li>
-                                    <li>
-                                        在活动部，你可以将自己的想法变成现实
-                                    </li>
-                                </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -343,158 +366,310 @@
             </div>
         </div>
     </div>
-</div>
-<!-- -->
-<div id="long">
-<section class="dark-content our-team" id="long">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-header">
-                     <h3 class="section-title">长期活动</h3>
-                    <br>
-                     </div> <!-- /.section-header -->
-            </div> <!-- /.col-md-12 -->
-        </div> <!-- /.row -->
-    </div> <!-- /.container -->
-    <div class="team-members">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="thumb-post">
-                            <a href="https://mp.weixin.qq.com/s/Ylf1CtkvPYM2BpiD-WOU2Q">
-                            <img src="img/我与动物有个约会.jpg" >
-                            </a>
-                        </div>
-                        <div class="member-content">
-                            <h4 class="member-name">我与动物有个约会</h4>
-                            <p style="color:black">萌物与我 相约红山动物园</p>
-                        </div>
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.col-md-4 -->
-                
-                
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="thumb-post">
-                            <a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">
-                            <img src="img/青春伴夕阳.JPG" alt="">
-                            </a>
-                        </div>
-                        <div class="member-content">
-                            <h4 class="member-name">青春伴夕阳</h4>
-                            <p style="color:black">等你长大  陪他们变老</p>
-                        </div>
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.col-md-4 -->
-                
-                
-                <div class="col-md-4 col-sm-4">
-                    <div class="team-member">
-                        <div class="thumb-post">
-                            <a href="https://mp.weixin.qq.com/s/E4f-iH-2bnMBCXO2bd-ADw">
-                            <img src="img/食堂微公益.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="member-content">
-                            <h4 class="member-name">食堂微公益</h4>
-                            <p style="color:black">食堂后厨 不一样的天地</p>
-                        </div>
-                    </div> <!-- /.team-member -->
-                </div> <!-- /.col-md-4 -->
-                
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-    </div> <!-- /.team-members -->
-</section> <!-- /.our-team -->
-</div>
-<section id="short">
-    <section class="dark-content our-team" id="long">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-header">
-                        <h3 class="section-title">短期活动</h3>
-                        <br>
-                    </div> <!-- /.section-header -->
-                </div> <!-- /.col-md-12 -->
-            </div> <!-- /.row -->
-        </div> <!-- /.container -->
-        <div class="team-members">
+
+    <!-- 长期活动 -->
+    <div id="long">
+        <section class="dark-content our-team" id="long">
             <div class="container">
                 <div class="row">
-                    
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h3 class="section-title">长期活动</h3>
+                            <br>
+                        </div>
+                        <!-- /.section-header -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <div class="team-members">
+                <div class="container">
+                    <div class="row">
+
                         <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <a href="https://mp.weixin.qq.com/s/Ylf1CtkvPYM2BpiD-WOU2Q">
+                                        <img src="img/我与动物有个约会.jpg">
+                                    </a>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">我与动物有个约会</h4>
+                                    <p style="color:black">“萌物与我 相约红山动物园”</p>
+                                    <p style="color:black;text-align: left;text-indent: 2em;">
+                                        每一个生命的出现和成长都是来自不易的， 因此他们享受美好阳光和自由生活的权利都应当受到尊重和保护。动物是人类的朋友，是自然生态系统的重要组成部分，是大自然赋予人类的宝贵自然资源。天健社举办这一活动，旨在通过志愿者们将动物保护这一理念传播出去，呼吁南京大学的同学们一起关爱动物，带动动物保护事业在全社会的蓬勃发展。
+                                    </p>
+                                    <p style="color:black;text-align: left;text-indent: 2em;">
+                                        说教和没有实践基础的臆测无法真正达到保护动物的目的，需让同学们到动物园内，到动物身边，在和动物们的近距离接触和讲解过程中逐步了解它们，也愈加真切体会到人与动物、人与自然和谐相处的美好愿景。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <a href="https://mp.weixin.qq.com/s/cY2jMdk1RaRLRt5jaQJ9tw">
+                                        <img src="img/青春伴夕阳.JPG" alt="">
+                                    </a>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">青春伴夕阳</h4>
+                                    <p style="color:black">“等你长大 陪他们变老”</p>
+                                    <p style="color:black;text-align: left;text-indent: 2em;">
+                                        我国人口老龄化不断增长的趋势日益明显，关爱空巢老人越来越成为人们关注的话题。关爱空巢老人的精神生活和物质生活，对营造文明和谐的社会环境和人际关系、推动社会和谐发展有重要的意义。当今社会崇孝文化未获得足够重视，新老几代代际差异明显且缺乏沟通。通过关爱老人的活动，可以起到呼吁大学生们参与到关注空巢老人的行动中的作用，同时推崇中华民族传统的尊老爱幼的美德，弘扬崇孝尚德的精神。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="thumb-post">
+                                    <a href="https://mp.weixin.qq.com/s/E4f-iH-2bnMBCXO2bd-ADw">
+                                        <img src="img/食堂微公益.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">食堂微公益</h4>
+                                    <p style="color:black">“食堂后厨 不一样的天地”</p>
+                                    <p style="color:black;text-align: left;text-indent: 2em;">
+                                        食堂作为学校师生的主要餐饮场所，其人员的服务态度、饮食的质量与水平等都会对师生们的生活产生较大影响。良好的食堂环境的营造对全体师生而言意义重大。然而在目前的校园生活之中，同学们与食堂工作人员的沟通缺乏有效途径，导致食堂的服务无法及时有效地进行改进，并且双方不能做到很好地相互理解。因此，促进同学与食堂的沟通了解变得十分重要。在此背景下，本活动的开展，在减轻食堂工作人员的负担的同时，更努力为校园师生与食堂搭建一个便捷的沟通渠道。最终使得同学与食堂的沟通与相互理解，共同努力促进食堂服务水平的提高，从而为全校师生构造一个更加舒适的用餐环境。
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.team-members -->
+        </section>
+        <!-- /.our-team -->
+    </div>
+    
+    <!-- 短期活动 -->
+    <div id="short">
+        <section class="dark-content our-team" id="long">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h3 class="section-title">短期活动</h3>
+                            <br>
+                        </div>
+                        <!-- /.section-header -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <div class="team-members">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
                             <div class="team-member">
                                 <div class="thumb-post1">
                                     <a href="https://mp.weixin.qq.com/s/nEWf5Yu0_oVlRq6DCDLlYw">
-                                    <img src="img/风筝节.JPG" alt="风筝节" />
+                                        <img src="img/风筝节.JPG" alt="风筝节" />
                                     </a>
                                 </div>
                                 <div class="member-content">
                                     <h4 class="member-name">风筝节</h4>
                                     <p style="color:black">让我们和春日有个约会</p>
                                 </div>
-                            </div> <!-- /.team-member -->
-                        </div> <!-- /.col-md-4 -->
-                    
-                    
-                        <div class="col-md-4 col-sm-4">
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
                             <div class="team-member">
                                 <div class="thumb-post1">
                                     <a href="https://mp.weixin.qq.com/s/ENepysIACRuS1GsEpcbbOA">
-                                    <img src="img/国家公祭日.JPG"  alt="国家公祭日系列活动" />
+                                        <img src="img/国家公祭日.JPG" alt="国家公祭日系列活动" />
                                     </a>
                                 </div>
                                 <div class="member-content">
                                     <h4 class="member-name">国家公祭日系列活动</h4>
                                     <p style="color:black">1937.12.13 不能忘却的记忆</p>
-                                 </div>
-                            </div> <!-- /.team-member -->
-                        </div> <!-- /.col-md-4 -->
-                    
-                    
-                        <div class="col-md-4 col-sm-4">
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+
+                        <div class="col-md-6 col-sm-6">
                             <div class="team-member">
                                 <div class="thumb-post1">
-                                    <a href="https://mp.weixin.qq.com/s/3O61Plo_Hi14NjIsNhp-xw">
-                                    <img src="img/绿植活动.jpg" alt="绿植活动" />
+                                    <a href="https://mp.weixin.qq.com/s/8jzMGlKEWLxaIMihKHdWeA">
+                                        <img src="img/温暖小站.jpg" alt="温暖小站" />
                                     </a>
                                 </div>
                                 <div class="member-content">
-                                    <h4 class="member-name">绿植活动</h4>
-                                    <p style="color:black">玉在山而草木润</p>
+                                    <h4 class="member-name">温暖小站</h4>
+                                    <p style="color:black">有一个小站，属于渴望温暖的每一个你和我</p>
                                 </div>
-                            </div> <!-- /.team-member -->
-                        </div> <!-- /.col-md-4 -->
-                    
-                </div> <!-- /.row -->
-            </div> <!-- /.container -->
-        </div> <!-- /.team-members -->
-    </section> <!-- /.our-team -->
-    <br>
-    <br>
-    <br>
-</section>
-	<!-- Valine评论功能代码 ↓ -->
-	<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-	<div id="vcomments" style="background-color:#FFFFFF; padding:5%; "></div>
-	<script>
-		new Valine({
-			el: '#vcomments',
-			appId: 'y4vfsfHxHSSX2pL1E1vNkBAH-gzGzoHsz',
-			appKey: '9HAxTF8S7qYYWg3WUtE4rqCj',
-			placeholder: 'ヾﾉ≧∀≦)o 来啊，快来留下你想说的话~\n\n\n（PS：昵称、邮箱、网址可以留空哦）' // [v1.0.7 new]留言框占位提示文字
-		})
-	</script>
-	<!-- Valine评论功能代码 ↑ -->
-<section id="footer">
-    <p>
-        <a class="social-icon" href="https://www.zhihu.com/question/400026973" target="_blank">
-            <svg t="1602410688258" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" p-id="7363" width="200" height="200">
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="thumb-post1">
+                                    <a href="https://mp.weixin.qq.com/s/TP9p1PnFhyuS-zQYw7Qxzg">
+                                        <img src="img/久别重逢.jpg" alt="久别重逢" />
+                                    </a>
+                                </div>
+                                <div class="member-content">
+                                    <h4 class="member-name">久别重逢</h4>
+                                    <p style="color:black">疫情可以困住走出去的脚步，却困不住我们欣赏身边美好的目光</p>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">                        
+                        <div class="col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="thumb-post1">
+                                    <a href="https://mp.weixin.qq.com/s/-A6IFOKb6z6scXUd0lS1MQ">
+                                        <img src="img/绿植活动1.jpg" alt="绿植活动" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="team-member">
+                                <div class="thumb-post1">
+                                    <a href="https://mp.weixin.qq.com/s/-A6IFOKb6z6scXUd0lS1MQ">
+                                        <img src="img/绿植活动2.jpg" alt="绿植活动" />
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <!-- /.col-md-4 -->
+                    </div>
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="member-content" >
+                            <h4 class="member-name">“你的名字”植物名牌活动</h4>
+                            <p style="color:black">玉在山而草木润</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="member-content" >
+                            <p style="color:black;font-style: italic;">……</p>
+                            <p style="color:black;font-style: italic;font-weight: bold;">更多优秀活动等你探索</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.team-members -->
+        </section>
+        <!-- /.our-team -->
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <!-- 部门内建 -->
+    <div id="long">
+        <section class="dark-content our-team" id="long">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-header">
+                            <h3 class="section-title">部门内建</h3>
+                            <br>
+                        </div>
+                        <!-- /.section-header -->
+                    </div>
+                    <!-- /.col-md-12 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+            <div class="team-members">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="introduction_Pic">
+                                <div class="thumb-post">
+                                    <img src="img/活动部部门内建1.jpg">
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="introduction_Pic">
+                                <div class="">
+                                    <img src="img/活动部部门内建2.jpg">
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="team-member">
+                                <div class="member-content">
+                                    <h4 class="member-name">内建欢乐时光</h4>
+                                </div>
+                            </div>
+                            <!-- /.team-member -->
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.team-members -->
+        </section>
+        <!-- /.our-team -->
+    </div>
+
+    <!-- Valine评论功能代码 ↓ -->
+    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <div id="vcomments" style="background-color:#FFFFFF; padding:5%; "></div>
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: 'y4vfsfHxHSSX2pL1E1vNkBAH-gzGzoHsz',
+            appKey: '9HAxTF8S7qYYWg3WUtE4rqCj',
+            placeholder: 'ヾﾉ≧∀≦)o 来啊，快来留下你想说的话~\n\n\n（PS：昵称、邮箱、网址可以留空哦）' // [v1.0.7 new]留言框占位提示文字
+        })
+    </script>
+    <!-- Valine评论功能代码 ↑ -->
+
+    <section id="footer">
+        <p>
+            <a class="social-icon" href="https://www.zhihu.com/question/400026973" target="_blank">
+                <svg t="1602410688258" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7363" width="200" height="200">
                 <path
                     d="M512 1024C229.236364 1024 0 794.763636 0 512S229.236364 0 512 0s512 229.236364 512 512-229.236364 512-512 512z m-129.861818-756.48s-36.212364 2.094545-48.989091 24.482909c-12.8 22.365091-54.318545 137.378909-54.318546 137.378909s13.847273 6.376727 37.28291-10.658909c23.435636-17.035636 30.882909-46.848 30.882909-46.848l42.589091-2.117818 1.070545 121.390545s-73.495273-1.070545-88.413091 0c-14.894545 1.047273-23.412364 40.448-23.412364 40.448h111.825455s-9.588364 67.095273-38.353455 116.084364c-28.741818 48.989091-83.060364 87.319273-83.060363 87.319273s39.424 15.965091 77.730909-6.4c38.353455-22.341818 66.629818-120.692364 66.629818-120.692364l89.925818 110.056727s8.192-52.386909-1.466182-67.188363c-9.658182-14.778182-62.208-74.286545-62.208-74.286546l-22.946909 20.247273 16.337455-65.117091h97.954909s0-38.353455-19.153455-40.494545c-19.176727-2.094545-78.801455 0-78.801454 0V371.898182h88.389818s-1.070545-39.400727-18.106182-39.400727h-143.755636l22.341818-64.954182z m169.984 61.184v358.562909h36.002909l13.102545 45.009455 63.348364-45.009455h89.064727V328.704h-201.518545z"
                     fill="#ffffff" p-id="7364"></path>
@@ -502,10 +677,9 @@
                     d="M594.781091 368.64h117.899636v277.876364h-41.890909l-53.364363 40.261818-11.636364-40.261818h-11.008V368.64z"
                     fill="#ffffff" p-id="7365"></path>
             </svg>
-        </a>
-        <a class="social-icon" href="https://space.bilibili.com/426406230" target="_blank">
-            <svg t="1602410645541" class="icon" viewBox="0 0 1129 1024" version="1.1"
-                xmlns="http://www.w3.org/2000/svg" p-id="6740" width="200" height="200">
+            </a>
+            <a class="social-icon" href="https://space.bilibili.com/426406230" target="_blank">
+                <svg t="1602410645541" class="icon" viewBox="0 0 1129 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="6740" width="200" height="200">
                 <path
                     d="M 234.909 9.65619 a 80.4683 80.4683 0 0 1 68.398 0 a 167.374 167.374 0 0 1 41.8435 30.5779 l 160.937 140.82 H 621.156 L 782.093 40.2341 a 168.983 168.983 0 0 1 41.8435 -30.5779 a 80.4683 80.4683 0 0 1 107.023 66.7887 a 80.4683 80.4683 0 0 1 -17.703 53.9138 a 449.818 449.818 0 0 1 -35.406 32.1873 a 232.553 232.553 0 0 1 -22.5311 18.5077 h 100.585 a 170.593 170.593 0 0 1 118.288 53.1091 A 171.397 171.397 0 0 1 1128.11 352.451 v 462.693 a 325.897 325.897 0 0 1 -4.02342 70.0074 a 178.64 178.64 0 0 1 -80.4683 112.656 a 173.007 173.007 0 0 1 -92.5385 25.7499 H 212.377 a 341.186 341.186 0 0 1 -72.4215 -4.02342 a 177.835 177.835 0 0 1 -111.046 -80.4683 A 172.202 172.202 0 0 1 1.55049 846.526 V 388.662 A 360.498 360.498 0 0 1 1.55049 321.873 a 177.03 177.03 0 0 1 160.937 -143.234 h 105.413 c -16.8983 -12.0702 -31.3826 -26.5545 -46.6716 -39.4295 a 80.4683 80.4683 0 0 1 -25.7499 -65.984 A 80.4683 80.4683 0 0 1 234.909 9.65619 M 216.401 321.873 a 80.4683 80.4683 0 0 0 -63.5699 57.9372 a 108.632 108.632 0 0 0 0 30.5779 v 380.615 a 80.4683 80.4683 0 0 0 55.5231 80.4683 a 106.218 106.218 0 0 0 34.6014 5.63278 h 654.207 a 80.4683 80.4683 0 0 0 76.4449 -47.4763 a 112.656 112.656 0 0 0 8.04683 -53.1091 v -354.06 a 135.187 135.187 0 0 0 0 -38.6248 a 80.4683 80.4683 0 0 0 -52.3044 -54.7184 a 129.554 129.554 0 0 0 -49.8903 -7.24215 H 254.221 a 268.764 268.764 0 0 0 -37.8201 0 Z m 0 0"
                     fill="#ffffff" p-id="6741"></path>
@@ -514,17 +688,16 @@
                     fill="#ffffff" p-id="6742"></path>
             </svg>
 
-        </a>
-        <a class="social-icon" href="https://github.com/NJUTianJian/NJUTianJian.github.io" target="_blank">
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <a class="social-icon" href="https://github.com/NJUTianJian/NJUTianJian.github.io" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title id="simpleicons-github-icon" lang="en">GitHub icon</title>
                 <path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
             </svg>
 
-        </a>
-        <a class="social-icon" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzAxNjE1OTgwMQ==&hid=5&sn=bb1fa9acc517d8904d9d5a914d19ab4e&scene=18#wechat_redirect"
-           target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
+            </a>
+            <a class="social-icon" href="https://mp.weixin.qq.com/mp/homepage?__biz=MzAxNjE1OTgwMQ==&hid=5&sn=bb1fa9acc517d8904d9d5a914d19ab4e&scene=18#wechat_redirect" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
                    style="mix-blend-mode: normal">
@@ -545,9 +718,9 @@
                     </g>
                 </g>
             </svg>
-        </a>
-        <a class="social-icon" href="https://baike.baidu.com/item/南京大学天健社" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
+            </a>
+            <a class="social-icon" href="https://baike.baidu.com/item/南京大学天健社" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 252 252" style="fill:#000000;">
                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
                    stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none"
                    style="mix-blend-mode: normal">
@@ -570,25 +743,29 @@
                     </g>
                 </g>
             </svg>
-        </a>
-    </p>
-    <p style="font-size:14px">遵循
-        <a href="https://opensource.org/licenses/MIT" target="_blank">MIT 开源协议</a>
-        <br> Ⓒ 2018 南大天健社技术部 团队出品
-    </p>
-</section>
+            </a>
+        </p>
+        <p style="font-size:14px">遵循
+            <a href="https://opensource.org/licenses/MIT" target="_blank">MIT 开源协议</a>
+            <br> Ⓒ 2018 南大天健社技术部 团队出品
+        </p>
+    </section>
 
-<script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
-<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
-<script type="text/javascript" src="js/jquery.plusGallery.js"></script>
-<script type="text/javascript">
-	$(window).on('load', function() {
-	    $('.myplusgallery').plusGallery({height: '350px'});
-	});
-  </script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/bootsnav.js"></script>
-<!--
+    <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
+    <script type="text/javascript" src="js/jquery.plusGallery.js"></script>
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('.myplusgallery').plusGallery({
+                height: '350px'
+            });
+        });
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootsnav.js"></script>
+    <!--
 <script>
     $(function(){
         var navH=$(".menu").offset().top;
@@ -603,19 +780,19 @@
     })
 </script>
 -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-<script type="text/javascript">
-		$(document).ready(function(){
-		    $("#testimonial-slider").owlCarousel({
-		        items:1,
-		        itemsDesktop:[1000,1],
-		        itemsDesktopSmall:[979,1],
-		        itemsTablet:[768,1],
-		        pagination: true,
-		        autoPlay:true
-		    });
-		});
-	</script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#testimonial-slider").owlCarousel({
+                items: 1,
+                itemsDesktop: [1000, 1],
+                itemsDesktopSmall: [979, 1],
+                itemsTablet: [768, 1],
+                pagination: true,
+                autoPlay: true
+            });
+        });
+    </script>
 
 </body>
 
