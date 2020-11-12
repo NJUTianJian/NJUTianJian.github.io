@@ -2,9 +2,10 @@
 
 > 参考Github项目：https://github.com/Foveluy/React-awesome-resume
 
-此目录用于生成[技术部动态页面](https://github.com/zsnjuts/TianJianWebsite/blob/master/Department-Technology.html)所需要的JavaScript文件，即`../js/techdept-bundle.js`。
+此目录用于生成[技术部动态页面](https://github.com/NJUTianJian/NJUTianJian.github.io/blob/master/Group-Website.html)所需要的JavaScript文件，即`../js/techdept-bundle.js`。
+PS：动态页面内容存放在：`tools\group-website\app\src\introduction.txt`。
 
-要能够运行，首先需要执行命令`npm install`
+要能够运行，首先需要执行命令`npm install`（先根据百度，安装好nodejs和npm，且更新到最新版本）
 
 本地测试
 -------
